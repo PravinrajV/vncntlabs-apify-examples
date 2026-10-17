@@ -1,0 +1,38 @@
+{
+  "name": "Keyword search volume (Apify: vncntlabs/keyword-search-volume)",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "6f1d0c2a-1b7e-4c55-9d1e-0a1b2c3d4e01",
+      "name": "When clicking 'Test workflow'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/vncntlabs~keyword-search-volume/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"keywords\": [\"teacher gift\", \"pickleball paddle\"],\n  \"sources\": [\"google\"],\n  \"location\": \"United States\"\n}",
+        "options": { "timeout": 300000 }
+      },
+      "id": "6f1d0c2a-1b7e-4c55-9d1e-0a1b2c3d4e02",
+      "name": "Get search volume",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [240, 0],
+      "notes": "Create a 'Header Auth' credential: Name = Authorization, Value = Bearer <your APIFY_TOKEN>. Each dataset row comes out as one n8n item."
+    }
+  ],
+  "connections": {
+    "When clicking 'Test workflow'": {
+      "main": [[{ "node": "Get search volume", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": { "executionOrder": "v1" },
+  "pinData": {}
+}

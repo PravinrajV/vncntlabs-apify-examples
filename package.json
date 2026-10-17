@@ -1,0 +1,12 @@
+{
+  "name": "vncntlabs-apify-examples",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal runnable examples for the VNCNT Labs Apify Actors tutorials",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "apify-client": "^2.9.0"
+  }
+}

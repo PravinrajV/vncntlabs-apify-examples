@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "apify": {
+      "url": "https://mcp.apify.com?tools=actors,vncntlabs/keyword-search-volume,vncntlabs/domain-seo-data,vncntlabs/google-trends-search-volume"
+    }
+  }
+}
