@@ -6,7 +6,7 @@ folder connects Claude, ChatGPT or Cursor to the same Actors through Apify's MCP
 
 | Folder | Tutorial | Apify Actor |
 |---|---|---|
-| [`01-keyword-search-volume`](01-keyword-search-volume) | Bulk Google + Amazon keyword search volume (tutorial coming soon) | [Keyword Search Volume](https://apify.com/vncntlabs/keyword-search-volume) |
+| [`01-keyword-search-volume`](01-keyword-search-volume) | Bulk Google + Amazon keyword search volume ([tutorial](https://dev.to/vncntlabs/bulk-google-amazon-keyword-search-volume-for-about-3-per-1000-keywords-api-n8n-claude-f87)) | [Keyword Search Volume](https://apify.com/vncntlabs/keyword-search-volume) |
 | [`02-competitor-seo-report`](02-competitor-seo-report) | A competitor SEO report for any domain (tutorial coming soon) | [Domain SEO Data](https://apify.com/vncntlabs/domain-seo-data) |
 | [`03-google-trends-volume`](03-google-trends-volume) | Google Trends with real monthly-search numbers (tutorial coming soon) | [Google Trends with Search Volume](https://apify.com/vncntlabs/google-trends-search-volume) |
 
