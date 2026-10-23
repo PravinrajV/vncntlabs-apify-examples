@@ -10,4 +10,6 @@ for d in 01-keyword-search-volume 02-competitor-seo-report 03-google-trends-volu
   echo "== $d (python)"; "$PY" "$d/python_example.py" "test-inputs/$d.json"
   echo "== $d (node)";   node "$d/node_example.mjs"   "test-inputs/$d.json"
 done
+echo "== 04-website-traffic-checker (python)"
+"$PY" 04-website-traffic-checker/python_example.py test-inputs/04-website-traffic-checker.json
 echo "all examples passed"

@@ -1,6 +1,6 @@
 # VNCNT Labs Apify examples
 
-Minimal, runnable code for three tutorials on pulling SEO and search data through the Apify API. Each folder has the same call
+Minimal, runnable code for the VNCNT Labs tutorials on pulling SEO and search data through the Apify API. Each folder has the same call
 four ways: curl, Python (`apify-client`), Node.js (`apify-client`) and, where the tutorial uses it, an n8n workflow. The `mcp/`
 folder connects Claude, ChatGPT or Cursor to the same Actors through Apify's MCP server.
 
@@ -9,6 +9,7 @@ folder connects Claude, ChatGPT or Cursor to the same Actors through Apify's MCP
 | [`01-keyword-search-volume`](01-keyword-search-volume) | Bulk Google + Amazon keyword search volume ([tutorial](https://dev.to/vncntlabs/bulk-google-amazon-keyword-search-volume-for-about-3-per-1000-keywords-api-n8n-claude-f87)) | [Keyword Search Volume](https://apify.com/vncntlabs/keyword-search-volume) |
 | [`02-competitor-seo-report`](02-competitor-seo-report) | A competitor SEO report for any domain (tutorial coming soon) | [Domain SEO Data](https://apify.com/vncntlabs/domain-seo-data) |
 | [`03-google-trends-volume`](03-google-trends-volume) | Google Trends with real monthly-search numbers (tutorial coming soon) | [Google Trends with Search Volume](https://apify.com/vncntlabs/google-trends-search-volume) |
+| [`04-website-traffic-checker`](04-website-traffic-checker) | Website traffic checker: Google traffic, competitor keywords and SEO competitors for any domain (tutorial link added on publish) | [Domain SEO Data](https://apify.com/vncntlabs/domain-seo-data) |
 
 ## Setup
 
@@ -41,7 +42,7 @@ python 02-competitor-seo-report/python_example.py my-input.json
 ```
 
 `test-inputs/` holds the smallest useful input for each Actor (1 keyword, 1 domain, 1 term). `scripts/smoke_test.sh` runs
-all six Python and Node examples with them.
+all the Python and Node examples with them.
 
 **Note for Python:** `apify-client` 3.x returns a `Run` object, so the dataset ID is `run.default_dataset_id`. Code written
 for 1.x/2.x uses `run["defaultDatasetId"]` instead.
