@@ -12,4 +12,8 @@ for d in 01-keyword-search-volume 02-competitor-seo-report 03-google-trends-volu
 done
 echo "== 04-website-traffic-checker (python)"
 "$PY" 04-website-traffic-checker/python_example.py test-inputs/04-website-traffic-checker.json
+echo "== 05-youtube-transcripts (python)"
+"$PY" 05-youtube-transcripts/python_example.py test-inputs/05-youtube-transcripts.json
+echo "== 05-youtube-transcripts (node)"
+node 05-youtube-transcripts/node_example.mjs test-inputs/05-youtube-transcripts.json
 echo "all examples passed"

@@ -10,6 +10,7 @@ folder connects Claude, ChatGPT or Cursor to the same Actors through Apify's MCP
 | [`02-competitor-seo-report`](02-competitor-seo-report) | A competitor SEO report for any domain (tutorial coming soon) | [Domain SEO Data](https://apify.com/vncntlabs/domain-seo-data) |
 | [`03-google-trends-volume`](03-google-trends-volume) | Google Trends with real monthly-search numbers (tutorial coming soon) | [Google Trends with Search Volume](https://apify.com/vncntlabs/google-trends-search-volume) |
 | [`04-website-traffic-checker`](04-website-traffic-checker) | Website traffic checker: Google traffic, competitor keywords and SEO competitors for any domain ([tutorial](https://dev.to/vncntlabs/website-traffic-checker-api-plausibleios-google-traffic-competitor-keywords-and-backlinks-for-412j)) | [Domain SEO Data](https://apify.com/vncntlabs/domain-seo-data) |
+| [`05-youtube-transcripts`](05-youtube-transcripts) | YouTube transcripts with timestamps from links or keyword searches (tutorial coming soon) | [YouTube Transcript Scraper](https://apify.com/vncntlabs/youtube-transcript-scraper) |
 
 ## Setup
 
@@ -60,7 +61,8 @@ with name `Authorization` and value `Bearer <your token>`, and select it on the 
 | `mcp/remote-bearer.json` | You'd rather use a token. Clients that expand environment variables read `${APIFY_TOKEN}`. Otherwise, paste your token. |
 | `mcp/local-stdio.json` | Your client only supports local servers (needs Node 18+). Replace the placeholder token. |
 
-Each config loads only the three Actors above plus Apify's Actor-search tools. Then ask something like
+Each config loads only the three Actors above plus Apify's Actor-search tools. For YouTube transcripts, use
+[`05-youtube-transcripts/mcp.json`](05-youtube-transcripts/mcp.json) (`https://mcp.apify.com/?tools=vncntlabs/youtube-transcript-scraper`). Then ask something like
 *"Get US Google and Amazon search volume for these 40 keywords and sort by volume per KD point."*
 
 ## Costs
