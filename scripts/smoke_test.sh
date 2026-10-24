@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Runs every Python and Node example once against the live Actors with the tiny inputs in test-inputs/
-# (1 keyword / 1 domain / 1 term), so a full pass costs a few cents.
+# (1 keyword / 1 domain / 1 term / 1 niche), so a full pass costs well under $1 at list price.
 # Needs: APIFY_TOKEN, `pip install -r requirements.txt`, `npm install`.
 set -euo pipefail
 : "${APIFY_TOKEN:?set APIFY_TOKEN first}"
@@ -16,4 +16,8 @@ echo "== 05-youtube-transcripts (python)"
 "$PY" 05-youtube-transcripts/python_example.py test-inputs/05-youtube-transcripts.json
 echo "== 05-youtube-transcripts (node)"
 node 05-youtube-transcripts/node_example.mjs test-inputs/05-youtube-transcripts.json
+for d in 06-seo-content-research 07-amazon-niche-analyzer; do
+  echo "== $d (python)"; "$PY" "$d/python_example.py" "test-inputs/$d.json"
+  echo "== $d (node)";   node "$d/node_example.mjs"   "test-inputs/$d.json"
+done
 echo "all examples passed"

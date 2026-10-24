@@ -10,7 +10,9 @@ folder connects Claude, ChatGPT or Cursor to the same Actors through Apify's MCP
 | [`02-competitor-seo-report`](02-competitor-seo-report) | A competitor SEO report for any domain (tutorial coming soon) | [Domain SEO Data](https://apify.com/vncntlabs/domain-seo-data) |
 | [`03-google-trends-volume`](03-google-trends-volume) | Google Trends with real monthly-search numbers (tutorial coming soon) | [Google Trends with Search Volume](https://apify.com/vncntlabs/google-trends-search-volume) |
 | [`04-website-traffic-checker`](04-website-traffic-checker) | Website traffic checker: Google traffic, competitor keywords and SEO competitors for any domain ([tutorial](https://dev.to/vncntlabs/website-traffic-checker-api-plausibleios-google-traffic-competitor-keywords-and-backlinks-for-412j)) | [Domain SEO Data](https://apify.com/vncntlabs/domain-seo-data) |
-| [`05-youtube-transcripts`](05-youtube-transcripts) | YouTube transcripts with timestamps from links or keyword searches (tutorial coming soon) | [YouTube Transcript Scraper](https://apify.com/vncntlabs/youtube-transcript-scraper) |
+| [`05-youtube-transcripts`](05-youtube-transcripts) | YouTube transcripts with timestamps from links, keyword searches or channels (tutorial coming soon) | [YouTube Transcript Scraper](https://apify.com/vncntlabs/youtube-transcript-scraper) |
+| [`06-seo-content-research`](06-seo-content-research) | An SEO content-research report per keyword: volume, Google top 10, People Also Ask and YouTube transcripts (tutorial coming soon) | [SEO Content Research](https://apify.com/vncntlabs/seo-content-bundle) |
+| [`07-amazon-niche-analyzer`](07-amazon-niche-analyzer) | Amazon niche research for low-content books, Kindle and print-on-demand t-shirts (tutorial coming soon) | [Amazon Book & T-Shirt Niche Analyzer](https://apify.com/vncntlabs/amazon-book-tshirt-niche-analyzer) |
 
 ## Setup
 
@@ -62,7 +64,9 @@ with name `Authorization` and value `Bearer <your token>`, and select it on the 
 | `mcp/local-stdio.json` | Your client only supports local servers (needs Node 18+). Replace the placeholder token. |
 
 Each config loads only the three Actors above plus Apify's Actor-search tools. For YouTube transcripts, use
-[`05-youtube-transcripts/mcp.json`](05-youtube-transcripts/mcp.json) (`https://mcp.apify.com/?tools=vncntlabs/youtube-transcript-scraper`). Then ask something like
+[`05-youtube-transcripts/mcp.json`](05-youtube-transcripts/mcp.json) (`https://mcp.apify.com/?tools=vncntlabs/youtube-transcript-scraper`). For content research, use
+[`06-seo-content-research/mcp.json`](06-seo-content-research/mcp.json), and for Amazon niche research,
+[`07-amazon-niche-analyzer/mcp.json`](07-amazon-niche-analyzer/mcp.json). Then ask something like
 *"Get US Google and Amazon search volume for these 40 keywords and sort by volume per KD point."*
 
 ## Costs
