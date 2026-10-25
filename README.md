@@ -69,9 +69,18 @@ Each config loads only the three Actors above plus Apify's Actor-search tools. F
 [`07-amazon-niche-analyzer/mcp.json`](07-amazon-niche-analyzer/mcp.json). Then ask something like
 *"Get US Google and Amazon search volume for these 40 keywords and sort by volume per KD point."*
 
+Ready-made hosted tool sets (also listed in the official MCP Registry and on Glama):
+
+| Set | Server URL |
+|---|---|
+| SEO & search data (9 tools) | `https://mcp.apify.com/?tools=vncntlabs/keyword-search-volume,vncntlabs/keyword-ideas,vncntlabs/domain-seo-data,vncntlabs/google-trends-search-volume,vncntlabs/ai-search-visibility-tracker,vncntlabs/google-maps-rank-tracker,vncntlabs/google-ads-transparency,vncntlabs/google-news-scraper,vncntlabs/seo-content-bundle` |
+| Seller tools (6 tools) | `https://mcp.apify.com/?tools=vncntlabs/pod-trademark-checker,vncntlabs/keyword-ideas,vncntlabs/google-shopping-scraper,vncntlabs/print-ready-upscaler,vncntlabs/png-to-svg-vectorizer,vncntlabs/amazon-book-tshirt-niche-analyzer` |
+| YouTube & content (3 tools) | `https://mcp.apify.com/?tools=vncntlabs/youtube-transcript-scraper,vncntlabs/youtube-search-scraper,vncntlabs/seo-content-bundle` |
+| Marketplace fees (1 tool) | `https://mcp.apify.com/?tools=vncntlabs/shoptrueprofit-fee-mcp` |
+
 ## Costs
 
-All three Actors are pay-per-event, and you pay only for results returned. Current prices are on each Actor's Store page,
+All these Actors are pay-per-event, and you pay only for results returned. Current prices are on each Actor's Store page,
 and you can cap a run with `maxTotalChargeUsd` (Keyword Search Volume input) or the maximum charge setting on any run.
 
 ## License
