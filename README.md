@@ -2,15 +2,15 @@
 
 Minimal, runnable code for calling VNCNT Labs tools through the Apify API. The numbered folders have the same call four ways: curl, Python (`apify-client`), Node.js (`apify-client`) and, where the tutorial uses it, an n8n workflow. The `mcp/` folder connects Claude, ChatGPT, Cursor or VS Code to the same tools through Apify's MCP server.
 
-## All 26 tools
+## All 27 tools
 
-Every tool runs the same way: send its input as JSON and get rows back. The example folders cover six tools in depth. For the rest, use the generic call below with the input from the tool's input schema page.
+Every tool runs the same way: send its input as JSON and get rows back. The example folders cover eight tools in depth. For the rest, use the generic call below with the input from the tool's input schema page.
 
 | Tool | Group | Price | Example |
 |---|---|---|---|
-| [Keyword Search Volume](https://apify.com/vncntlabs/keyword-search-volume) | SEO & Search Data | $0.003 per Google keyword ($0.004 Amazon, + $0.05 per batch) | [01-keyword-search-volume](01-keyword-search-volume) |
+| [Keyword Search Volume (Google Keyword Planner data)](https://apify.com/vncntlabs/keyword-search-volume) | SEO & Search Data | $0.003 per Google keyword ($0.004 Amazon, + $0.05 per batch) | [01-keyword-search-volume](01-keyword-search-volume) |
 | [Keyword Research Tool](https://apify.com/vncntlabs/keyword-ideas) | SEO & Search Data | $0.002 per keyword idea (+ $0.02 per seed/ASIN) | curl below |
-| [Website Traffic Checker](https://apify.com/vncntlabs/domain-seo-data) | SEO & Search Data | $0.02 per domain overview ($0.001 per ranked keyword) | [04-website-traffic-checker](04-website-traffic-checker) |
+| [Website Traffic Checker](https://apify.com/vncntlabs/domain-seo-data) | SEO & Search Data | $0.02 per domain overview ($0.001 per ranked keyword; competitor snapshot $0.12 from Nov 9) | [04-website-traffic-checker](04-website-traffic-checker), [09-competitor-snapshot](09-competitor-snapshot) |
 | [Google Trends Scraper & API with Search Volume](https://apify.com/vncntlabs/google-trends-search-volume) | SEO & Search Data | $0.01 per keyword report (+ $0.015 per volume lookup) | [03-google-trends-volume](03-google-trends-volume) |
 | [AI Visibility Tracker](https://apify.com/vncntlabs/ai-search-visibility-tracker) | SEO & Search Data | $0.03 per AI answer | curl below |
 | [Google Maps Rank Tracker](https://apify.com/vncntlabs/google-maps-rank-tracker) | SEO & Search Data | $0.006 per grid point | curl below |
@@ -25,6 +25,7 @@ Every tool runs the same way: send its input as JSON and get rows back. The exam
 | [PNG to SVG Converter](https://apify.com/vncntlabs/png-to-svg-vectorizer) | Seller Tools | $0.02 per image | curl below |
 | [Amazon Book & T-Shirt Niche Analyzer](https://apify.com/vncntlabs/amazon-book-tshirt-niche-analyzer) | Seller Tools | $0.15 per niche report | [07-amazon-niche-analyzer](07-amazon-niche-analyzer) |
 | [Amazon Product Scraper](https://apify.com/vncntlabs/amazon-product-scraper) | Seller Tools | $0.001 per product ($0.003 with ASIN details) | curl below |
+| [Amazon Best Sellers, New Releases & Movers Scraper](https://apify.com/vncntlabs/amazon-best-sellers) | Seller Tools | $0.002 per product ($0.005 with full details) | [08-amazon-best-sellers](08-amazon-best-sellers) |
 | [Google Images Scraper + Google Lens Reverse Image Search](https://apify.com/vncntlabs/google-images-scraper) | Seller Tools | $0.0004 per image ($0.004 per reverse search) | curl below |
 | [YouTube Transcript Scraper](https://apify.com/vncntlabs/youtube-transcript-scraper) | YouTube Data | $0.005 per transcript ($0.008 fast mode; videos without captions free) | [05-youtube-transcripts](05-youtube-transcripts) |
 | [YouTube Search & Comments Scraper](https://apify.com/vncntlabs/youtube-search-scraper) | YouTube Data | $0.0005 per video (+ $0.001 per search page) | curl below |
@@ -35,7 +36,7 @@ Every tool runs the same way: send its input as JSON and get rows back. The exam
 | [Google Hotels Scraper](https://apify.com/vncntlabs/google-hotels-scraper) | Local & Market Data | $0.002 per hotel | curl below |
 | [eBay, Etsy & Amazon FBA Fee Calculator (MCP + API)](https://apify.com/vncntlabs/shoptrueprofit-fee-mcp) | Fee & Profit | $0.005 per fee calculation | curl below |
 
-Prices are from each tool's Store page on Oct 24, 2026. The Store page is always the current source.
+Prices are from each tool's Store page on Oct 25, 2026. The Store page is always the current source.
 
 ## Example folders
 
@@ -48,6 +49,8 @@ Prices are from each tool's Store page on Oct 24, 2026. The Store page is always
 | [`05-youtube-transcripts`](05-youtube-transcripts) | YouTube transcripts with timestamps from links, keyword searches or channels (tutorial coming soon) | [YouTube Transcript Scraper](https://apify.com/vncntlabs/youtube-transcript-scraper) |
 | [`06-seo-content-research`](06-seo-content-research) | An SEO content-research report per keyword: volume, Google top 10, People Also Ask and YouTube transcripts (tutorial coming soon) | [SEO Content Research](https://apify.com/vncntlabs/seo-content-bundle) |
 | [`07-amazon-niche-analyzer`](07-amazon-niche-analyzer) | Amazon niche research for low-content books, Kindle and print-on-demand t-shirts (tutorial coming soon) | [Amazon Book & T-Shirt Niche Analyzer](https://apify.com/vncntlabs/amazon-book-tshirt-niche-analyzer) |
+| [`08-amazon-best-sellers`](08-amazon-best-sellers) | Amazon Best Sellers, Hot New Releases and Movers & Shakers for any category, with rank changes (tutorial coming soon) | [Amazon Best Sellers, New Releases & Movers Scraper](https://apify.com/vncntlabs/amazon-best-sellers) |
+| [`09-competitor-snapshot`](09-competitor-snapshot) | One-row competitor snapshots: traffic, top keywords, competitors and backlinks per domain (tutorial coming soon) | [Domain SEO Data](https://apify.com/vncntlabs/domain-seo-data) |
 
 ## Setup
 
@@ -103,7 +106,7 @@ The tools are grouped into five hosted MCP servers. Add one URL as a streamable 
 | Server | Tools | URL |
 |---|---|---|
 | SEO & Search Data | 11 | `https://mcp.apify.com/?tools=vncntlabs/keyword-search-volume,vncntlabs/keyword-ideas,vncntlabs/domain-seo-data,vncntlabs/google-trends-search-volume,vncntlabs/ai-search-visibility-tracker,vncntlabs/google-maps-rank-tracker,vncntlabs/google-ads-transparency,vncntlabs/google-news-scraper,vncntlabs/seo-content-bundle,vncntlabs/google-rank-tracker,vncntlabs/backlink-checker` |
-| Seller Tools | 8 | `https://mcp.apify.com/?tools=vncntlabs/pod-trademark-checker,vncntlabs/keyword-ideas,vncntlabs/google-shopping-scraper,vncntlabs/print-ready-upscaler,vncntlabs/png-to-svg-vectorizer,vncntlabs/amazon-book-tshirt-niche-analyzer,vncntlabs/amazon-product-scraper,vncntlabs/google-images-scraper` |
+| Seller Tools | 9 | `https://mcp.apify.com/?tools=vncntlabs/pod-trademark-checker,vncntlabs/keyword-ideas,vncntlabs/google-shopping-scraper,vncntlabs/print-ready-upscaler,vncntlabs/png-to-svg-vectorizer,vncntlabs/amazon-book-tshirt-niche-analyzer,vncntlabs/amazon-product-scraper,vncntlabs/google-images-scraper,vncntlabs/amazon-best-sellers` |
 | YouTube Data | 3 | `https://mcp.apify.com/?tools=vncntlabs/youtube-transcript-scraper,vncntlabs/youtube-search-scraper,vncntlabs/seo-content-bundle` |
 | Local & Market Data | 5 | `https://mcp.apify.com/?tools=vncntlabs/local-business-leads,vncntlabs/review-monitor,vncntlabs/app-reviews-scraper,vncntlabs/google-jobs-scraper,vncntlabs/google-hotels-scraper` |
 | Fee & Profit | 1 | `https://mcp.apify.com/?tools=vncntlabs/shoptrueprofit-fee-mcp` |
