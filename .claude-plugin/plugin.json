@@ -1,0 +1,32 @@
+{
+  "name": "vncntlabs-tools",
+  "displayName": "VNCNT Labs Tools",
+  "version": "1.0.0",
+  "description": "26 VNCNT Labs data tools as hosted MCP servers: SEO, seller, YouTube, local and fee data. Pay per result on Apify.",
+  "author": {
+    "name": "VNCNT Labs",
+    "email": "hello@vncntlabs.com",
+    "url": "https://vncntlabs.com"
+  },
+  "homepage": "https://vncntlabs.com/mcp/",
+  "repository": "https://github.com/PravinrajV/vncntlabs-apify-examples",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "seo",
+    "keyword-research",
+    "amazon",
+    "youtube",
+    "apify",
+    "local-seo"
+  ],
+  "userConfig": {
+    "apify_token": {
+      "type": "string",
+      "title": "Apify API token",
+      "description": "From Apify Console > Settings > API & Integrations. Tool runs are billed to this account.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "mcpServers": {
+    "vncntlabs-seo": {
+      "type": "http",
+      "url": "https://mcp.apify.com/?tools=vncntlabs/keyword-search-volume,vncntlabs/keyword-ideas,vncntlabs/domain-seo-data,vncntlabs/google-trends-search-volume,vncntlabs/ai-search-visibility-tracker,vncntlabs/google-maps-rank-tracker,vncntlabs/google-ads-transparency,vncntlabs/google-news-scraper,vncntlabs/seo-content-bundle,vncntlabs/google-rank-tracker,vncntlabs/backlink-checker",
+      "headers": {
+        "Authorization": "Bearer ${user_config.apify_token}"
+      }
+    },
+    "vncntlabs-seller": {
+      "type": "http",
+      "url": "https://mcp.apify.com/?tools=vncntlabs/pod-trademark-checker,vncntlabs/keyword-ideas,vncntlabs/google-shopping-scraper,vncntlabs/print-ready-upscaler,vncntlabs/png-to-svg-vectorizer,vncntlabs/amazon-book-tshirt-niche-analyzer,vncntlabs/amazon-product-scraper,vncntlabs/google-images-scraper",
+      "headers": {
+        "Authorization": "Bearer ${user_config.apify_token}"
+      }
+    },
+    "vncntlabs-video": {
+      "type": "http",
+      "url": "https://mcp.apify.com/?tools=vncntlabs/youtube-transcript-scraper,vncntlabs/youtube-search-scraper,vncntlabs/seo-content-bundle",
+      "headers": {
+        "Authorization": "Bearer ${user_config.apify_token}"
+      }
+    },
+    "vncntlabs-local": {
+      "type": "http",
+      "url": "https://mcp.apify.com/?tools=vncntlabs/local-business-leads,vncntlabs/review-monitor,vncntlabs/app-reviews-scraper,vncntlabs/google-jobs-scraper,vncntlabs/google-hotels-scraper",
+      "headers": {
+        "Authorization": "Bearer ${user_config.apify_token}"
+      }
+    },
+    "vncntlabs-fee": {
+      "type": "http",
+      "url": "https://mcp.apify.com/?tools=vncntlabs/shoptrueprofit-fee-mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.apify_token}"
+      }
+    }
+  }
+}
