@@ -2,6 +2,7 @@
 
 Get the transcript of any YouTube video, from links, IDs or a keyword search: full text, timestamped segments, caption
 language, title and channel. Actor: [YouTube Transcript Scraper](https://apify.com/vncntlabs/youtube-transcript-scraper).
+Tutorial: [YouTube transcript API on dev.to](https://dev.to/vncntlabs/youtube-transcript-api-full-text-and-timestamps-from-links-keyword-searches-or-channels-for-31kd).
 
 | File | What it does | Cost at list price (Oct 23, 2026) |
 |---|---|---|
