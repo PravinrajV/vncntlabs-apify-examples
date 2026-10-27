@@ -6,6 +6,7 @@ language, title and channel. Actor: [YouTube Transcript Scraper](https://apify.c
 | File | What it does | Cost at list price (Oct 23, 2026) |
 |---|---|---|
 | `python_example.py` / `node_example.mjs` | Transcripts of 2 videos by link and by ID, printing the first timestamped lines | $0.01 |
+| `rag_chunks.py` | Top 5 videos for a keyword (Shorts skipped), cut into about 60 seconds of speech per chunk, each with a link that opens the video at that second (tested Oct 27, 2026: 164 chunks) | $0.025 |
 | `curl.sh` | Top 5 videos for a keyword search (Shorts skipped), full text only | up to $0.025 |
 | `mcp.json` | Loads only this Actor into Claude, ChatGPT or Cursor through Apify's MCP server (OAuth sign-in) | per run |
 
@@ -13,6 +14,7 @@ language, title and channel. Actor: [YouTube Transcript Scraper](https://apify.c
 export APIFY_TOKEN=your_apify_token_here
 pip install -r ../requirements.txt   # apify-client 3.x
 python python_example.py             # or: python python_example.py my-input.json
+python rag_chunks.py
 node node_example.mjs
 ./curl.sh
 ```
