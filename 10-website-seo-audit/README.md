@@ -19,7 +19,7 @@ node node_example.mjs
 ./curl.sh
 ```
 
-Prices: $0.005 per run plus $0.003 per page audited ($3 per 1,000 pages). Pages that fail to crawl are not charged.
+Prices: $0.005 per run plus $0.003 per page audited ($3 per 1,000 pages). Sites that can't be crawled and page URLs that fail to load are not charged.
 Check the Store page for current prices.
 
 Crawls take about 2 to 3 seconds per page, so 100 pages is roughly 4 to 6 minutes. For bigger sites use
