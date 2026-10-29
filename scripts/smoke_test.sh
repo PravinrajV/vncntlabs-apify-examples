@@ -16,7 +16,7 @@ echo "== 05-youtube-transcripts (python)"
 "$PY" 05-youtube-transcripts/python_example.py test-inputs/05-youtube-transcripts.json
 echo "== 05-youtube-transcripts (node)"
 node 05-youtube-transcripts/node_example.mjs test-inputs/05-youtube-transcripts.json
-for d in 06-seo-content-research 07-amazon-niche-analyzer 08-amazon-best-sellers 09-competitor-snapshot 10-website-seo-audit; do
+for d in 06-seo-content-research 07-amazon-niche-analyzer 08-amazon-best-sellers 09-competitor-snapshot 10-website-seo-audit 11-keyword-gap-finder; do
   echo "== $d (python)"; "$PY" "$d/python_example.py" "test-inputs/$d.json"
   echo "== $d (node)";   node "$d/node_example.mjs"   "test-inputs/$d.json"
 done

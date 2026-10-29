@@ -11,7 +11,7 @@
     {
       "name": "vncntlabs-tools",
       "source": "./",
-      "description": "27 VNCNT Labs data tools as hosted MCP servers: SEO, seller, YouTube, local and fee data. Pay per result on Apify.",
+      "description": "28 VNCNT Labs data tools as hosted MCP servers: SEO, seller, YouTube, local and fee data. Pay per result on Apify.",
       "version": "1.0.0",
       "homepage": "https://vncntlabs.com/mcp/",
       "license": "MIT",

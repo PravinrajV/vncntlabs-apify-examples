@@ -1,10 +1,10 @@
 {
   "name": "vncntlabs-tools",
   "version": "1.0.0",
-  "description": "27 VNCNT Labs data tools as MCP servers: SEO, seller, YouTube, local and fee data. Pay per result on Apify.",
+  "description": "28 VNCNT Labs data tools as MCP servers: SEO, seller, YouTube, local and fee data. Pay per result on Apify.",
   "mcpServers": {
     "vncntlabs-seo": {
-      "httpUrl": "https://mcp.apify.com/?tools=vncntlabs/keyword-search-volume,vncntlabs/keyword-ideas,vncntlabs/domain-seo-data,vncntlabs/google-trends-search-volume,vncntlabs/ai-search-visibility-tracker,vncntlabs/google-maps-rank-tracker,vncntlabs/google-ads-transparency,vncntlabs/google-news-scraper,vncntlabs/seo-content-bundle,vncntlabs/google-rank-tracker,vncntlabs/backlink-checker,vncntlabs/website-seo-audit",
+      "httpUrl": "https://mcp.apify.com/?tools=vncntlabs/keyword-search-volume,vncntlabs/keyword-ideas,vncntlabs/domain-seo-data,vncntlabs/google-trends-search-volume,vncntlabs/ai-search-visibility-tracker,vncntlabs/google-maps-rank-tracker,vncntlabs/google-ads-transparency,vncntlabs/google-news-scraper,vncntlabs/seo-content-bundle,vncntlabs/google-rank-tracker,vncntlabs/backlink-checker,vncntlabs/website-seo-audit,vncntlabs/keyword-gap-finder",
       "headers": {
         "Authorization": "Bearer ${APIFY_TOKEN}"
       }
