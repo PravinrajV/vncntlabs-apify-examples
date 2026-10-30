@@ -28,3 +28,5 @@ Crawls take about 2 to 3 seconds per page, so 100 pages is roughly 4 to 6 minute
 Rows have a `type` field: `page`, `site` or `broken-link`. Site rows include `onpageScore`, `pagesCrawled`, `brokenPages`,
 `brokenLinks`, `duplicateTitles`, `hasSitemap`, `hasRobotsTxt`, `httpsRedirect` and `issues` (each with `pagesAffected`,
 `exampleUrls` and `howToFix`). Not affiliated with Google.
+
+Tutorial with a real run (Oct 30, 2026): [A website SEO audit from an API](https://dev.to/vncntlabs/a-website-seo-audit-from-an-api-broken-links-404s-and-on-page-issues-for-3-per-1000-pages-4m0j).
