@@ -1,7 +1,7 @@
 {
   "name": "vncntlabs-tools",
   "version": "1.0.0",
-  "description": "28 VNCNT Labs data tools as MCP servers: SEO, seller, YouTube, local and fee data. Pay per result on Apify.",
+  "description": "29 VNCNT Labs data tools as MCP servers: SEO, seller, YouTube, local and fee data. Pay per result on Apify.",
   "mcpServers": {
     "vncntlabs-seo": {
       "httpUrl": "https://mcp.apify.com/?tools=vncntlabs/keyword-search-volume,vncntlabs/keyword-ideas,vncntlabs/domain-seo-data,vncntlabs/google-trends-search-volume,vncntlabs/ai-search-visibility-tracker,vncntlabs/google-maps-rank-tracker,vncntlabs/google-ads-transparency,vncntlabs/google-news-scraper,vncntlabs/seo-content-bundle,vncntlabs/google-rank-tracker,vncntlabs/backlink-checker,vncntlabs/website-seo-audit,vncntlabs/keyword-gap-finder",
@@ -10,7 +10,7 @@
       }
     },
     "vncntlabs-seller": {
-      "httpUrl": "https://mcp.apify.com/?tools=vncntlabs/pod-trademark-checker,vncntlabs/keyword-ideas,vncntlabs/google-shopping-scraper,vncntlabs/print-ready-upscaler,vncntlabs/png-to-svg-vectorizer,vncntlabs/amazon-book-tshirt-niche-analyzer,vncntlabs/amazon-product-scraper,vncntlabs/google-images-scraper,vncntlabs/amazon-best-sellers",
+      "httpUrl": "https://mcp.apify.com/?tools=vncntlabs/pod-trademark-checker,vncntlabs/keyword-ideas,vncntlabs/google-shopping-scraper,vncntlabs/print-ready-upscaler,vncntlabs/png-to-svg-vectorizer,vncntlabs/amazon-book-tshirt-niche-analyzer,vncntlabs/amazon-product-scraper,vncntlabs/google-images-scraper,vncntlabs/amazon-best-sellers,vncntlabs/shopify-products-scraper",
       "headers": {
         "Authorization": "Bearer ${APIFY_TOKEN}"
       }

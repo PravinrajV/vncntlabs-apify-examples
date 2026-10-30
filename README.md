@@ -2,9 +2,9 @@
 
 Minimal, runnable code for calling VNCNT Labs tools through the Apify API. The numbered folders have the same call four ways: curl, Python (`apify-client`), Node.js (`apify-client`) and, where the tutorial uses it, an n8n workflow. The `mcp/` folder connects Claude, ChatGPT, Cursor or VS Code to the same tools through Apify's MCP server.
 
-## All 29 tools
+## All 30 tools
 
-Every tool runs the same way: send its input as JSON and get rows back. The example folders cover ten tools in depth. For the rest, use the generic call below with the input from the tool's input schema page.
+Every tool runs the same way: send its input as JSON and get rows back. The example folders cover eleven tools in depth. For the rest, use the generic call below with the input from the tool's input schema page.
 
 | Tool | Group | Price | Example |
 |---|---|---|---|
@@ -29,6 +29,7 @@ Every tool runs the same way: send its input as JSON and get rows back. The exam
 | [Amazon Product Scraper](https://apify.com/vncntlabs/amazon-product-scraper) | Seller Tools | $0.001 per product ($0.003 with ASIN details) | curl below |
 | [Amazon Best Sellers, New Releases & Movers Scraper](https://apify.com/vncntlabs/amazon-best-sellers) | Seller Tools | $0.002 per product ($0.005 with full details) | [08-amazon-best-sellers](08-amazon-best-sellers) |
 | [Google Images Scraper + Google Lens Reverse Image Search](https://apify.com/vncntlabs/google-images-scraper) | Seller Tools | $0.0004 per image ($0.004 per reverse search) | curl below |
+| [Shopify Products Scraper: Prices, Variants, Stock & Launches](https://apify.com/vncntlabs/shopify-products-scraper) | Seller Tools | $0.0005 per product (+ $0.005 per run) | [12-shopify-products-scraper](12-shopify-products-scraper) |
 | [YouTube Transcript Scraper](https://apify.com/vncntlabs/youtube-transcript-scraper) | YouTube Data | $0.005 per transcript ($0.008 fast mode; videos without captions free) | [05-youtube-transcripts](05-youtube-transcripts) |
 | [YouTube Search & Comments Scraper](https://apify.com/vncntlabs/youtube-search-scraper) | YouTube Data | $0.0005 per video (+ $0.001 per search page) | curl below |
 | [Local Business Leads from Google Maps](https://apify.com/vncntlabs/local-business-leads) | Local & Market Data | $0.002 per lead | curl below |
@@ -55,6 +56,7 @@ Prices are from each tool's Store page on Oct 25, 2026. The Store page is always
 | [`09-competitor-snapshot`](09-competitor-snapshot) | One-row competitor snapshots: traffic, top keywords, competitors and backlinks per domain (tutorial coming soon) | [Domain SEO Data](https://apify.com/vncntlabs/domain-seo-data) |
 | [`10-website-seo-audit`](10-website-seo-audit) | A website SEO audit: broken pages, broken links and on-page issues for a whole site (tutorial coming soon) | [Website SEO Audit](https://apify.com/vncntlabs/website-seo-audit) |
 | [`11-keyword-gap-finder`](11-keyword-gap-finder) | A keyword gap report: Google keywords your competitors rank for and you don't, or where they outrank you (tutorial coming soon) | [Keyword Gap Finder](https://apify.com/vncntlabs/keyword-gap-finder) |
+| [`12-shopify-products-scraper`](12-shopify-products-scraper) | Every product from a Shopify store with prices, discounts, stock and launch dates (tutorial coming soon) | [Shopify Products Scraper](https://apify.com/vncntlabs/shopify-products-scraper) |
 
 ## Setup
 
