@@ -2,9 +2,9 @@
 
 Minimal, runnable code for calling VNCNT Labs tools through the Apify API. The numbered folders have the same call four ways: curl, Python (`apify-client`), Node.js (`apify-client`) and, where the tutorial uses it, an n8n workflow. The `mcp/` folder connects Claude, ChatGPT, Cursor or VS Code to the same tools through Apify's MCP server.
 
-## All 30 tools
+## All 31 tools
 
-Every tool runs the same way: send its input as JSON and get rows back. The example folders cover eleven tools in depth. For the rest, use the generic call below with the input from the tool's input schema page.
+Every tool runs the same way: send its input as JSON and get rows back. The example folders cover twelve tools in depth. For the rest, use the generic call below with the input from the tool's input schema page.
 
 | Tool | Group | Price | Example |
 |---|---|---|---|
@@ -21,6 +21,7 @@ Every tool runs the same way: send its input as JSON and get rows back. The exam
 | [Backlink Checker & Bulk Domain Authority](https://apify.com/vncntlabs/backlink-checker) | SEO & Search Data | $0.0004 per backlink ($0.002 per domain metrics) | curl below |
 | [Website SEO Audit: Broken Link & On-Page SEO Checker](https://apify.com/vncntlabs/website-seo-audit) | SEO & Search Data | $0.003 per page audited (+ $0.005 per run) | [10-website-seo-audit](10-website-seo-audit) |
 | [Keyword Gap Finder: Competitor Keywords You Don't Rank For](https://apify.com/vncntlabs/keyword-gap-finder) | SEO & Search Data | $0.02 per competitor + $0.001 per keyword (+ $0.005 per run) | [11-keyword-gap-finder](11-keyword-gap-finder) |
+| [Google SERP Scraper: Results, People Also Ask & AI Overviews](https://apify.com/vncntlabs/google-serp-scraper) | SEO & Search Data | $0.002 per results page ($0.0012 more in fast mode, + $0.005 per run) | [13-google-serp-scraper](13-google-serp-scraper) |
 | [Trademark Checker](https://apify.com/vncntlabs/pod-trademark-checker) | Seller Tools | $0.003 per phrase checked ($0.01 per listing) | curl below |
 | [Google Shopping Scraper](https://apify.com/vncntlabs/google-shopping-scraper) | Seller Tools | $0.002 per product ($0.01 with all offers) | curl below |
 | [AI Image Upscaler for Print](https://apify.com/vncntlabs/print-ready-upscaler) | Seller Tools | $0.06 per image ($0.10 over 40 MP) | curl below |
@@ -57,6 +58,7 @@ Prices are from each tool's Store page on Oct 25, 2026. The Store page is always
 | [`10-website-seo-audit`](10-website-seo-audit) | A website SEO audit: broken pages, broken links and on-page issues for a whole site ([tutorial](https://dev.to/vncntlabs/a-website-seo-audit-from-an-api-broken-links-404s-and-on-page-issues-for-3-per-1000-pages-4m0j)) | [Website SEO Audit](https://apify.com/vncntlabs/website-seo-audit) |
 | [`11-keyword-gap-finder`](11-keyword-gap-finder) | A keyword gap report: Google keywords your competitors rank for and you don't, or where they outrank you (tutorial coming soon) | [Keyword Gap Finder](https://apify.com/vncntlabs/keyword-gap-finder) |
 | [`12-shopify-products-scraper`](12-shopify-products-scraper) | Every product from a Shopify store with prices, discounts, stock and launch dates (tutorial coming soon) | [Shopify Products Scraper](https://apify.com/vncntlabs/shopify-products-scraper) |
+| [`13-google-serp-scraper`](13-google-serp-scraper) | Google results pages as data: organic rankings, People Also Ask, AI Overviews and the local pack for any city or device (tutorial coming soon) | [Google SERP Scraper](https://apify.com/vncntlabs/google-serp-scraper) |
 
 ## Setup
 
