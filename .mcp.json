@@ -23,7 +23,7 @@
     },
     "vncntlabs-local": {
       "type": "http",
-      "url": "https://mcp.apify.com/?tools=vncntlabs/local-business-leads,vncntlabs/review-monitor,vncntlabs/app-reviews-scraper,vncntlabs/google-jobs-scraper,vncntlabs/google-hotels-scraper",
+      "url": "https://mcp.apify.com/?tools=vncntlabs/local-business-leads,vncntlabs/website-contact-scraper,vncntlabs/review-monitor,vncntlabs/app-reviews-scraper,vncntlabs/google-jobs-scraper,vncntlabs/google-hotels-scraper",
       "headers": {
         "Authorization": "Bearer ${user_config.apify_token}"
       }

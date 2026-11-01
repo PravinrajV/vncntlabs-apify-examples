@@ -2,9 +2,9 @@
 
 Minimal, runnable code for calling VNCNT Labs tools through the Apify API. The numbered folders have the same call four ways: curl, Python (`apify-client`), Node.js (`apify-client`) and, where the tutorial uses it, an n8n workflow. The `mcp/` folder connects Claude, ChatGPT, Cursor or VS Code to the same tools through Apify's MCP server.
 
-## All 31 tools
+## All 32 tools
 
-Every tool runs the same way: send its input as JSON and get rows back. The example folders cover twelve tools in depth. For the rest, use the generic call below with the input from the tool's input schema page.
+Every tool runs the same way: send its input as JSON and get rows back. The example folders cover thirteen tools in depth. For the rest, use the generic call below with the input from the tool's input schema page.
 
 | Tool | Group | Price | Example |
 |---|---|---|---|
@@ -34,6 +34,7 @@ Every tool runs the same way: send its input as JSON and get rows back. The exam
 | [YouTube Transcript Scraper](https://apify.com/vncntlabs/youtube-transcript-scraper) | YouTube Data | $0.005 per transcript ($0.008 fast mode; videos without captions free) | [05-youtube-transcripts](05-youtube-transcripts) |
 | [YouTube Search & Comments Scraper](https://apify.com/vncntlabs/youtube-search-scraper) | YouTube Data | $0.0005 per video (+ $0.001 per search page) | curl below |
 | [Local Business Leads from Google Maps](https://apify.com/vncntlabs/local-business-leads) | Local & Market Data | $0.002 per lead | curl below |
+| [Website Contact Scraper: Business Emails, Phones & Socials](https://apify.com/vncntlabs/website-contact-scraper) | Local & Market Data | $0.002 per website with contacts (+ $0.005 per run) | [14-website-contact-scraper](14-website-contact-scraper) |
 | [Google Maps, Trustpilot & Tripadvisor Reviews Scraper](https://apify.com/vncntlabs/review-monitor) | Local & Market Data | $0.0005 per review (+ $0.001 per business) | curl below |
 | [Google Play & App Store Reviews Scraper](https://apify.com/vncntlabs/app-reviews-scraper) | Local & Market Data | $0.0001 per Google Play review ($0.00015 App Store) | curl below |
 | [Google Jobs Scraper & API](https://apify.com/vncntlabs/google-jobs-scraper) | Local & Market Data | $0.002 per job | curl below |
@@ -59,6 +60,7 @@ Prices are from each tool's Store page on Oct 25, 2026. The Store page is always
 | [`11-keyword-gap-finder`](11-keyword-gap-finder) | A keyword gap report: Google keywords your competitors rank for and you don't, or where they outrank you (tutorial coming soon) | [Keyword Gap Finder](https://apify.com/vncntlabs/keyword-gap-finder) |
 | [`12-shopify-products-scraper`](12-shopify-products-scraper) | Every product from a Shopify store with prices, discounts, stock and launch dates (tutorial coming soon) | [Shopify Products Scraper](https://apify.com/vncntlabs/shopify-products-scraper) |
 | [`13-google-serp-scraper`](13-google-serp-scraper) | Google results pages as data: organic rankings, People Also Ask, AI Overviews and the local pack for any city or device (tutorial coming soon) | [Google SERP Scraper](https://apify.com/vncntlabs/google-serp-scraper) |
+| [`14-website-contact-scraper`](14-website-contact-scraper) | Business emails, phone numbers, social profiles and contact pages from a list of websites, with the page each email came from (tutorial coming soon) | [Website Contact Scraper](https://apify.com/vncntlabs/website-contact-scraper) |
 
 ## Setup
 
@@ -116,7 +118,7 @@ The tools are grouped into five hosted MCP servers. Add one URL as a streamable 
 | SEO & Search Data | 11 | `https://mcp.apify.com/?tools=vncntlabs/keyword-search-volume,vncntlabs/keyword-ideas,vncntlabs/domain-seo-data,vncntlabs/google-trends-search-volume,vncntlabs/ai-search-visibility-tracker,vncntlabs/google-maps-rank-tracker,vncntlabs/google-ads-transparency,vncntlabs/google-news-scraper,vncntlabs/seo-content-bundle,vncntlabs/google-rank-tracker,vncntlabs/backlink-checker` |
 | Seller Tools | 9 | `https://mcp.apify.com/?tools=vncntlabs/pod-trademark-checker,vncntlabs/keyword-ideas,vncntlabs/google-shopping-scraper,vncntlabs/print-ready-upscaler,vncntlabs/png-to-svg-vectorizer,vncntlabs/amazon-book-tshirt-niche-analyzer,vncntlabs/amazon-product-scraper,vncntlabs/google-images-scraper,vncntlabs/amazon-best-sellers` |
 | YouTube Data | 3 | `https://mcp.apify.com/?tools=vncntlabs/youtube-transcript-scraper,vncntlabs/youtube-search-scraper,vncntlabs/seo-content-bundle` |
-| Local & Market Data | 5 | `https://mcp.apify.com/?tools=vncntlabs/local-business-leads,vncntlabs/review-monitor,vncntlabs/app-reviews-scraper,vncntlabs/google-jobs-scraper,vncntlabs/google-hotels-scraper` |
+| Local & Market Data | 6 | `https://mcp.apify.com/?tools=vncntlabs/local-business-leads,vncntlabs/website-contact-scraper,vncntlabs/review-monitor,vncntlabs/app-reviews-scraper,vncntlabs/google-jobs-scraper,vncntlabs/google-hotels-scraper` |
 | Fee & Profit | 1 | `https://mcp.apify.com/?tools=vncntlabs/shoptrueprofit-fee-mcp` |
 
 To mix tools, put any `vncntlabs/<tool>` names in one `?tools=` list.

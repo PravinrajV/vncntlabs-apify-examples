@@ -1,7 +1,7 @@
 {
   "name": "vncntlabs-tools",
   "version": "1.0.0",
-  "description": "30 VNCNT Labs data tools as MCP servers: SEO, seller, YouTube, local and fee data. Pay per result on Apify.",
+  "description": "31 VNCNT Labs data tools as MCP servers: SEO, seller, YouTube, local and fee data. Pay per result on Apify.",
   "mcpServers": {
     "vncntlabs-seo": {
       "httpUrl": "https://mcp.apify.com/?tools=vncntlabs/keyword-search-volume,vncntlabs/keyword-ideas,vncntlabs/domain-seo-data,vncntlabs/google-trends-search-volume,vncntlabs/ai-search-visibility-tracker,vncntlabs/google-maps-rank-tracker,vncntlabs/google-ads-transparency,vncntlabs/google-news-scraper,vncntlabs/seo-content-bundle,vncntlabs/google-rank-tracker,vncntlabs/backlink-checker,vncntlabs/website-seo-audit,vncntlabs/keyword-gap-finder,vncntlabs/google-serp-scraper",
@@ -22,7 +22,7 @@
       }
     },
     "vncntlabs-local": {
-      "httpUrl": "https://mcp.apify.com/?tools=vncntlabs/local-business-leads,vncntlabs/review-monitor,vncntlabs/app-reviews-scraper,vncntlabs/google-jobs-scraper,vncntlabs/google-hotels-scraper",
+      "httpUrl": "https://mcp.apify.com/?tools=vncntlabs/local-business-leads,vncntlabs/website-contact-scraper,vncntlabs/review-monitor,vncntlabs/app-reviews-scraper,vncntlabs/google-jobs-scraper,vncntlabs/google-hotels-scraper",
       "headers": {
         "Authorization": "Bearer ${APIFY_TOKEN}"
       }
