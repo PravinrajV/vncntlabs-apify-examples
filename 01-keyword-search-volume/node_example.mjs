@@ -16,5 +16,5 @@ if (process.argv[2]) input = JSON.parse(readFileSync(process.argv[2], 'utf8')); 
 const run = await client.actor('vncntlabs/keyword-search-volume').call(input);
 const { items } = await client.dataset(run.defaultDatasetId).listItems();
 for (const row of items) {
-    console.log(row.keyword, row.googleSearchVolume, row.amazonSearchVolume, row.cpcUsd);
+    console.log(row.keyword, row.googleSearchVolume, row.amazonSearchVolume, row.bingSearchVolume, row.aiSearchVolume, row.cpcUsd);
 }
