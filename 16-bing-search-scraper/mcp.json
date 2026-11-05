@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "vncntlabs-bing-search": {
+      "url": "https://mcp.apify.com/?tools=vncntlabs/bing-search-scraper",
+      "headers": {
+        "Authorization": "Bearer ${APIFY_TOKEN}"
+      }
+    }
+  }
+}
