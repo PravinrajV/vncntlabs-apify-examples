@@ -16,7 +16,7 @@
     },
     "vncntlabs-video": {
       "type": "http",
-      "url": "https://mcp.apify.com/?tools=vncntlabs/youtube-transcript-scraper,vncntlabs/youtube-search-scraper,vncntlabs/seo-content-bundle",
+      "url": "https://mcp.apify.com/?tools=vncntlabs/youtube-transcript-scraper,vncntlabs/youtube-search-scraper,vncntlabs/seo-content-bundle,vncntlabs/youtube-video-details",
       "headers": {
         "Authorization": "Bearer ${user_config.apify_token}"
       }

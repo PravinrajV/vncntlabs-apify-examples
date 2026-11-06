@@ -24,6 +24,7 @@ Every tool runs the same way: send its input as JSON and get rows back. The exam
 | [Google SERP Scraper: Results, People Also Ask & AI Overviews](https://apify.com/vncntlabs/google-serp-scraper) | SEO & Search Data | $0.002 per results page ($0.0012 more in fast mode, + $0.005 per run) | [13-google-serp-scraper](13-google-serp-scraper) |
 | [Website Tech Stack Checker](https://apify.com/vncntlabs/website-tech-stack) | SEO & Search Data | $0.02 per domain ($0.05 per find + $0.003/match, + $0.005 per run) | [15-website-tech-stack](15-website-tech-stack) |
 | [Bing Search Scraper: Results, Rankings & Related Searches](https://apify.com/vncntlabs/bing-search-scraper) | SEO & Search Data | $0.002 per results page ($0.0012 more in fast mode, + $0.005 per run) | [16-bing-search-scraper](16-bing-search-scraper) |
+| [YouTube Video Details: Views, Likes, Channel & Subscribers](https://apify.com/vncntlabs/youtube-video-details) | YouTube Data | $0.005 per video (+ $0.005 per run; missing/private free) | [17-youtube-video-details](17-youtube-video-details) |
 | [Trademark Checker](https://apify.com/vncntlabs/pod-trademark-checker) | Seller Tools | $0.003 per phrase checked ($0.01 per listing) | curl below |
 | [Google Shopping Scraper](https://apify.com/vncntlabs/google-shopping-scraper) | Seller Tools | $0.002 per product ($0.01 with all offers) | curl below |
 | [AI Image Upscaler for Print](https://apify.com/vncntlabs/print-ready-upscaler) | Seller Tools | $0.06 per image ($0.10 over 40 MP) | curl below |
@@ -119,7 +120,7 @@ The tools are grouped into five hosted MCP servers. Add one URL as a streamable 
 |---|---|---|
 | SEO & Search Data | 13 | `https://mcp.apify.com/?tools=vncntlabs/keyword-search-volume,vncntlabs/keyword-ideas,vncntlabs/domain-seo-data,vncntlabs/google-trends-search-volume,vncntlabs/ai-search-visibility-tracker,vncntlabs/google-maps-rank-tracker,vncntlabs/google-ads-transparency,vncntlabs/google-news-scraper,vncntlabs/seo-content-bundle,vncntlabs/google-rank-tracker,vncntlabs/backlink-checker,vncntlabs/website-tech-stack,vncntlabs/bing-search-scraper` |
 | Seller Tools | 9 | `https://mcp.apify.com/?tools=vncntlabs/pod-trademark-checker,vncntlabs/keyword-ideas,vncntlabs/google-shopping-scraper,vncntlabs/print-ready-upscaler,vncntlabs/png-to-svg-vectorizer,vncntlabs/amazon-book-tshirt-niche-analyzer,vncntlabs/amazon-product-scraper,vncntlabs/google-images-scraper,vncntlabs/amazon-best-sellers` |
-| YouTube Data | 3 | `https://mcp.apify.com/?tools=vncntlabs/youtube-transcript-scraper,vncntlabs/youtube-search-scraper,vncntlabs/seo-content-bundle` |
+| YouTube Data | 4 | `https://mcp.apify.com/?tools=vncntlabs/youtube-transcript-scraper,vncntlabs/youtube-search-scraper,vncntlabs/seo-content-bundle,vncntlabs/youtube-video-details` |
 | Local & Market Data | 6 | `https://mcp.apify.com/?tools=vncntlabs/local-business-leads,vncntlabs/website-contact-scraper,vncntlabs/review-monitor,vncntlabs/app-reviews-scraper,vncntlabs/google-jobs-scraper,vncntlabs/google-hotels-scraper` |
 | Fee & Profit | 1 | `https://mcp.apify.com/?tools=vncntlabs/shoptrueprofit-fee-mcp` |
 
