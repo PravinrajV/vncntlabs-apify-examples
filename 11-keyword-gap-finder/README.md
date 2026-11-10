@@ -5,16 +5,18 @@ monthly search volume, CPC, keyword difficulty, intent, how many competitors ran
 and URL. `mode: "behind"` returns keywords where a competitor outranks you, and `mode: "shared"` returns every keyword you
 share. Actor: [Keyword Gap Finder](https://apify.com/vncntlabs/keyword-gap-finder).
 
-| File | What it does | Cost at list price (Oct 29, 2026) |
+| File | What it does | Cost at list price (Nov 10, 2026) |
 |---|---|---|
 | `python_example.py` / `node_example.mjs` | Compares one domain with one competitor and prints the top 10 missing keywords | $0.035 |
-| `curl.sh` | Keywords where 2 competitors outrank you, as one synchronous HTTP call | up to $0.065 |
+| `two_competitors.py` | Two competitors, `excludeKeywordsContaining: ["wix"]`, prints each gap size and the top 20 merged keywords | $0.065 |
+| `curl.sh` | Keywords where 2 competitors outrank you, as one synchronous HTTP call | $0.065 |
 | `mcp.json` | Loads only this Actor into Claude, ChatGPT or Cursor through Apify's MCP server (OAuth sign-in) | per run |
 
 ```bash
 export APIFY_TOKEN=your_apify_token_here
 pip install -r ../requirements.txt   # apify-client 3.x
 python python_example.py             # or: python python_example.py my-input.json
+python two_competitors.py
 node node_example.mjs
 ./curl.sh
 ```
