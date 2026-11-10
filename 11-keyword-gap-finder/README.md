@@ -27,3 +27,5 @@ no ranking data aren't charged. Check the Store page for current prices.
 Runs usually finish in under 10 seconds. Rows have a `type` field: `keyword`, `competitor` (one summary per competitor)
 or `skipped` (inputs that weren't valid domains). Branded searches for your competitors are left out by default
 (`excludeBrandedKeywords`). Positions and volumes are estimates from DataForSEO Labs. Not affiliated with Google.
+
+Tutorial: [Keyword gap analysis from an API](https://dev.to/vncntlabs/keyword-gap-analysis-from-an-api-competitor-keywords-you-dont-rank-for-about-1-per-1000-lg) (dev.to, Nov 10, 2026).
