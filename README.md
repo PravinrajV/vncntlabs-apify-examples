@@ -2,9 +2,9 @@
 
 Minimal, runnable code for calling VNCNT Labs tools through the Apify API. The numbered folders have the same call four ways: curl, Python (`apify-client`), Node.js (`apify-client`) and, where the tutorial uses it, an n8n workflow. The `mcp/` folder connects Claude, ChatGPT, Cursor or VS Code to the same tools through Apify's MCP server.
 
-## All 34 tools
+## All 37 tools
 
-Every tool runs the same way: send its input as JSON and get rows back. The example folders cover sixteen tools in depth. For the rest, use the generic call below with the input from the tool's input schema page.
+Every tool runs the same way: send its input as JSON and get rows back. The example folders cover these tools in depth. For the rest, use the generic call below with the input from the tool's input schema page.
 
 | Tool | Group | Price | Example |
 |---|---|---|---|
@@ -24,6 +24,7 @@ Every tool runs the same way: send its input as JSON and get rows back. The exam
 | [Google SERP Scraper: Results, People Also Ask & AI Overviews](https://apify.com/vncntlabs/google-serp-scraper) | SEO & Search Data | $0.002 per results page ($0.0012 more in fast mode, + $0.005 per run) | [13-google-serp-scraper](13-google-serp-scraper) |
 | [Website Tech Stack Checker](https://apify.com/vncntlabs/website-tech-stack) | SEO & Search Data | $0.02 per domain ($0.05 per find + $0.003/match, + $0.005 per run) | [15-website-tech-stack](15-website-tech-stack) |
 | [Bing Search Scraper: Results, Rankings & Related Searches](https://apify.com/vncntlabs/bing-search-scraper) | SEO & Search Data | $0.002 per results page ($0.0012 more in fast mode, + $0.005 per run) | [16-bing-search-scraper](16-bing-search-scraper) |
+| [Google AI Mode Scraper: Answers & Competitor Share of Voice](https://apify.com/vncntlabs/google-ai-mode-scraper) | SEO & Search Data | $0.005 per answer + $0.005 per run | [19-google-ai-mode-scraper](19-google-ai-mode-scraper) |
 | [YouTube Video Details: Views, Likes, Channel & Subscribers](https://apify.com/vncntlabs/youtube-video-details) | YouTube Data | $0.005 per video (+ $0.005 per run; missing/private free) | [17-youtube-video-details](17-youtube-video-details) |
 | [YouTube Comments Scraper: Top Comments, Likes & Replies](https://apify.com/vncntlabs/youtube-comments-scraper) | YouTube Data | $0.0003 per comment + $0.001 per video (+ $0.005 per run; missing/private free) | [18-youtube-comments-scraper](18-youtube-comments-scraper) |
 | [Trademark Checker](https://apify.com/vncntlabs/pod-trademark-checker) | Seller Tools | $0.003 per phrase checked ($0.01 per listing) | curl below |
@@ -119,7 +120,7 @@ The tools are grouped into five hosted MCP servers. Add one URL as a streamable 
 
 | Server | Tools | URL |
 |---|---|---|
-| SEO & Search Data | 13 | `https://mcp.apify.com/?tools=vncntlabs/keyword-search-volume,vncntlabs/keyword-ideas,vncntlabs/domain-seo-data,vncntlabs/google-trends-search-volume,vncntlabs/ai-search-visibility-tracker,vncntlabs/google-maps-rank-tracker,vncntlabs/google-ads-transparency,vncntlabs/google-news-scraper,vncntlabs/seo-content-bundle,vncntlabs/google-rank-tracker,vncntlabs/backlink-checker,vncntlabs/website-tech-stack,vncntlabs/bing-search-scraper` |
+| SEO & Search Data | 17 | `https://mcp.apify.com/?tools=vncntlabs/keyword-search-volume,vncntlabs/keyword-ideas,vncntlabs/domain-seo-data,vncntlabs/google-trends-search-volume,vncntlabs/ai-search-visibility-tracker,vncntlabs/google-maps-rank-tracker,vncntlabs/google-ads-transparency,vncntlabs/google-news-scraper,vncntlabs/seo-content-bundle,vncntlabs/google-rank-tracker,vncntlabs/backlink-checker,vncntlabs/website-seo-audit,vncntlabs/keyword-gap-finder,vncntlabs/google-serp-scraper,vncntlabs/website-tech-stack,vncntlabs/bing-search-scraper,vncntlabs/google-ai-mode-scraper` |
 | Seller Tools | 9 | `https://mcp.apify.com/?tools=vncntlabs/pod-trademark-checker,vncntlabs/keyword-ideas,vncntlabs/google-shopping-scraper,vncntlabs/print-ready-upscaler,vncntlabs/png-to-svg-vectorizer,vncntlabs/amazon-book-tshirt-niche-analyzer,vncntlabs/amazon-product-scraper,vncntlabs/google-images-scraper,vncntlabs/amazon-best-sellers` |
 | YouTube Data | 5 | `https://mcp.apify.com/?tools=vncntlabs/youtube-transcript-scraper,vncntlabs/youtube-search-scraper,vncntlabs/seo-content-bundle,vncntlabs/youtube-video-details,vncntlabs/youtube-comments-scraper` |
 | Local & Market Data | 6 | `https://mcp.apify.com/?tools=vncntlabs/local-business-leads,vncntlabs/website-contact-scraper,vncntlabs/review-monitor,vncntlabs/app-reviews-scraper,vncntlabs/google-jobs-scraper,vncntlabs/google-hotels-scraper` |
