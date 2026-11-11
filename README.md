@@ -2,7 +2,7 @@
 
 Minimal, runnable code for calling VNCNT Labs tools through the Apify API. The numbered folders have the same call four ways: curl, Python (`apify-client`), Node.js (`apify-client`) and, where the tutorial uses it, an n8n workflow. The `mcp/` folder connects Claude, ChatGPT, Cursor or VS Code to the same tools through Apify's MCP server.
 
-## All 37 tools
+## All 38 tools
 
 Every tool runs the same way: send its input as JSON and get rows back. The example folders cover these tools in depth. For the rest, use the generic call below with the input from the tool's input schema page.
 
@@ -40,13 +40,14 @@ Every tool runs the same way: send its input as JSON and get rows back. The exam
 | [YouTube Search & Comments Scraper](https://apify.com/vncntlabs/youtube-search-scraper) | YouTube Data | $0.0005 per video (+ $0.001 per search page) | curl below |
 | [Local Business Leads from Google Maps](https://apify.com/vncntlabs/local-business-leads) | Local & Market Data | $0.002 per lead | curl below |
 | [Website Contact Scraper: Business Emails, Phones & Socials](https://apify.com/vncntlabs/website-contact-scraper) | Local & Market Data | $0.002 per website with contacts (+ $0.005 per run) | [14-website-contact-scraper](14-website-contact-scraper) |
-| [Google Maps, Trustpilot & Tripadvisor Reviews Scraper](https://apify.com/vncntlabs/review-monitor) | Local & Market Data | $0.0005 per review (+ $0.001 per business) | curl below |
+| [Compare Reviews Across Trustpilot, Google and Tripadvisor](https://apify.com/vncntlabs/review-monitor) | Local & Market Data | $0.0005 per review (+ $0.001 per business, including comparison rows) | curl below |
+| [Trustpilot Company Comparison: Ratings, Replies & Trend](https://apify.com/vncntlabs/trustpilot-company-comparison) | Local & Market Data | $0.005 start, $0.001 per comparison row or search hit, $0.0005 per review | [20-trustpilot-company-comparison](20-trustpilot-company-comparison) |
 | [Google Play & App Store Reviews Scraper](https://apify.com/vncntlabs/app-reviews-scraper) | Local & Market Data | $0.0001 per Google Play review ($0.00015 App Store) | curl below |
 | [Google Jobs Scraper & API](https://apify.com/vncntlabs/google-jobs-scraper) | Local & Market Data | $0.002 per job | curl below |
 | [Google Hotels Scraper](https://apify.com/vncntlabs/google-hotels-scraper) | Local & Market Data | $0.002 per hotel | curl below |
 | [eBay, Etsy & Amazon FBA Fee Calculator (MCP + API)](https://apify.com/vncntlabs/shoptrueprofit-fee-mcp) | Fee & Profit | $0.005 per fee calculation | curl below |
 
-Prices are from each tool's Store page on Oct 25, 2026. The Store page is always the current source.
+Prices are from each tool's Store page on Nov 11, 2026. The Store page is always the current source.
 
 ## Example folders
 
@@ -66,6 +67,8 @@ Prices are from each tool's Store page on Oct 25, 2026. The Store page is always
 | [`12-shopify-products-scraper`](12-shopify-products-scraper) | Every product from a Shopify store with prices, discounts, stock and launch dates (tutorial coming soon) | [Shopify Products Scraper](https://apify.com/vncntlabs/shopify-products-scraper) |
 | [`13-google-serp-scraper`](13-google-serp-scraper) | Google results pages as data: organic rankings, People Also Ask, AI Overviews and the local pack for any city or device (tutorial coming soon) | [Google SERP Scraper](https://apify.com/vncntlabs/google-serp-scraper) |
 | [`14-website-contact-scraper`](14-website-contact-scraper) | Business emails, phone numbers, social profiles and contact pages from a list of websites, with the page each email came from (tutorial coming soon) | [Website Contact Scraper](https://apify.com/vncntlabs/website-contact-scraper) |
+
+| [`20-trustpilot-company-comparison`](20-trustpilot-company-comparison) | Compare 2-5 Trustpilot companies side by side: 1-2 star trend, getting-worse flag, weekly velocity and reply rate (tutorial coming soon) | [Trustpilot Company Comparison](https://apify.com/vncntlabs/trustpilot-company-comparison) |
 
 ## Setup
 
@@ -123,7 +126,7 @@ The tools are grouped into five hosted MCP servers. Add one URL as a streamable 
 | SEO & Search Data | 17 | `https://mcp.apify.com/?tools=vncntlabs/keyword-search-volume,vncntlabs/keyword-ideas,vncntlabs/domain-seo-data,vncntlabs/google-trends-search-volume,vncntlabs/ai-search-visibility-tracker,vncntlabs/google-maps-rank-tracker,vncntlabs/google-ads-transparency,vncntlabs/google-news-scraper,vncntlabs/seo-content-bundle,vncntlabs/google-rank-tracker,vncntlabs/backlink-checker,vncntlabs/website-seo-audit,vncntlabs/keyword-gap-finder,vncntlabs/google-serp-scraper,vncntlabs/website-tech-stack,vncntlabs/bing-search-scraper,vncntlabs/google-ai-mode-scraper` |
 | Seller Tools | 9 | `https://mcp.apify.com/?tools=vncntlabs/pod-trademark-checker,vncntlabs/keyword-ideas,vncntlabs/google-shopping-scraper,vncntlabs/print-ready-upscaler,vncntlabs/png-to-svg-vectorizer,vncntlabs/amazon-book-tshirt-niche-analyzer,vncntlabs/amazon-product-scraper,vncntlabs/google-images-scraper,vncntlabs/amazon-best-sellers` |
 | YouTube Data | 5 | `https://mcp.apify.com/?tools=vncntlabs/youtube-transcript-scraper,vncntlabs/youtube-search-scraper,vncntlabs/seo-content-bundle,vncntlabs/youtube-video-details,vncntlabs/youtube-comments-scraper` |
-| Local & Market Data | 6 | `https://mcp.apify.com/?tools=vncntlabs/local-business-leads,vncntlabs/website-contact-scraper,vncntlabs/review-monitor,vncntlabs/app-reviews-scraper,vncntlabs/google-jobs-scraper,vncntlabs/google-hotels-scraper` |
+| Local & Market Data | 7 | `https://mcp.apify.com/?tools=vncntlabs/local-business-leads,vncntlabs/website-contact-scraper,vncntlabs/review-monitor,vncntlabs/app-reviews-scraper,vncntlabs/google-jobs-scraper,vncntlabs/google-hotels-scraper,vncntlabs/trustpilot-company-comparison` |
 | Fee & Profit | 1 | `https://mcp.apify.com/?tools=vncntlabs/shoptrueprofit-fee-mcp` |
 
 To mix tools, put any `vncntlabs/<tool>` names in one `?tools=` list.
@@ -144,4 +147,4 @@ Every tool is pay per event, and you pay only for results returned, on your own 
 
 ## License
 
-MIT, see [LICENSE](LICENSE). The data comes from the tools' providers under their terms. Not affiliated with Google, Amazon, YouTube, Etsy, eBay or the USPTO.
+MIT, see [LICENSE](LICENSE). The data comes from the tools' providers under their terms. Not affiliated with Google, Amazon, YouTube, Etsy, eBay, Trustpilot, Tripadvisor or the USPTO.
